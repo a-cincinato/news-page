@@ -84,7 +84,7 @@ hr{
     width: 100%;
     height: 400px;
     background: url(./img/heroimage.jpg) no-repeat center/cover;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;    
 }
 
@@ -114,19 +114,17 @@ hr{
 .btn{
     cursor: pointer;
     display: inline-block;
-    border: 0;
     font-weight: bold;
-    padding: 10px 20px;
     background: #171A13;
     color: #F2F2F2;
-    font-size: 14px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid #3D4341;
+    padding: 10px 20px;
     opacity: .7;
 }
 
 .btn:hover{
     background: #1E401B;
-    border: 1px solid #C8CECA;
+    border: 1px solid #060F00;
 }
 
 .overlay{
@@ -141,11 +139,17 @@ hr{
 
 
 /*NEWS CARDS*/
+.news-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
 .news-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 25px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 
 .news-cards img{
@@ -179,7 +183,7 @@ hr{
     width: 100%;
     height: 350px;
     background: url('./img/banner1.jpg')no-repeat center center/cover;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -213,7 +217,7 @@ hr{
     width: 100%;
     height: 350px;
     background: url('./img/banner3.jpg') no-repeat center center/cover;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     position: relative;
 }
 
@@ -243,28 +247,42 @@ hr{
 
 /*SOCIAL*/
 .social{
-    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.social{
-    text-align: center;
-    font-size: 17px;
-    margin-bottom: 40px;
+.subscribe .btn{
+    font-size: 20px;
+    font-weight: bold;
+    background: #1E401B;
+    border: 1px solid #1E401B;
+}
+
+.subscribe .btn:hover{
+    background: #171A13;
+    color: #F2F2F2;
+    border: 1px solid #3D4341;
 }
 
 .links{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
-.link a{
-    margin: 0 30px;  
+.links a{
+    margin: 0 10px;  
 }
 
 .links a i{
     font-size: 2rem;
-    padding: 0  10px;
+    padding: 0  5px;
+}
+
+.links a i:hover{
+    color: #335614;
 }
 
 /*FOOTER*/
@@ -287,6 +305,7 @@ hr{
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 3;
         background: #171A13;
         height: 100%;
         padding: 30px;
@@ -300,7 +319,7 @@ hr{
     }
 
     .nav-main ul.nav-menu li{
-        padding: 20px;
+        padding: 15px;
         font-size: 14px;
     }
     .nav-main ul.nav-menu-right{
